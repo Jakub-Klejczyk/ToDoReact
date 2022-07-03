@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+$purp: rgb(242, 169, 42);
+$yel: rgb(32, 40, 1);
+$gre: rgb(27, 43, 1);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $yel;
+}
+
+.App {
+  position: absolute;
+  top: 10%;
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  color: $purp;
+}
+
+.header--h1 {
+  margin-block: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  min-width: 60vw;
+  display: flex;
+  justify-content: center;
+}
+
+.form--input {
+  padding: 0.3rem;
+  border-color: $purp;
+  border-radius: 0.6rem;
+  color: $purp;
+}
+
+.form--button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 0 0.2rem;
+  border-color: $purp;
+  border-radius: 0.6rem;
+  color: $purp;
+}
+
+.todo-container {
+  width: 50vw;
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: 900px) {
+  .todo-container {
+    width: 30vw;
+  }
+}
+
+.elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: auto;
+  margin-block: 1rem;
+  border-color: $purp;
+  border-radius: 0.6rem;
+  border: 1px solid;
+  padding: 0.4rem;
+  background-color: $gre;
+  li {
+    background-color: $gre;
+  }
+}
+
+.inner-elem {
+  display: flex;
+  gap: 2rem;
+  background-color: $gre;
+  button {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 0.6rem;
+    border-color: $purp;
+    color: $purp;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+}
